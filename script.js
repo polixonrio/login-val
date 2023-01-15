@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 fnamebool = false;
                 setInputError(inputElement, "Must be a valid name");
                 }
-            else if(e.target.id === "fullname" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "fullname" &&  e.target.value.length >=6 &&  e.target.value.length < 255 ){
                 fnamebool = true;    
                 localStorage.setItem("fullnameid",e.target.value);
                 clearInputError(inputElement);
