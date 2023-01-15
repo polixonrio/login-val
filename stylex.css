@@ -1,0 +1,10 @@
+body {
+    height:100vh;
+    background-color: rgb(233, 245, 236) !important;
+}
+.card {
+    box-sizing: border-box;
+    padding: 10px;
+    position:absolute;
+}
+
