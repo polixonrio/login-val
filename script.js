@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 fnamebool = false;
                 setInputError(inputElement, "Must be a valid name");
                 }
-            else if(e.target.id === "fullname" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "fullname" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 fnamebool = true;    
                 localStorage.setItem("fullnameid",e.target.value);
                 clearInputError(inputElement);
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setInputError(inputElement, "Must be a valid address");
                 addbool = false;
                 }
-            else if(e.target.id === "addr" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "addr" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 addbool = true;
                 localStorage.setItem("addrid",e.target.value);
                 clearInputError(inputElement);
@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setInputError(inputElement, "Must be a valid name");
                 ccbool = false;
                 }
-            else if(e.target.id === "ccname" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "ccname" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 ccbool = true;
                 localStorage.setItem("ccnameid",e.target.value);
                 clearInputError(inputElement);
@@ -399,7 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setInputError(inputElement, "Must be a valid number");
                 enbool = false;
                 }
-            else if(e.target.id === "enumber" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "enumber" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 enbool = true;
                 localStorage.setItem("enumberid",e.target.value);
                 clearInputError(inputElement);
@@ -686,7 +686,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setInputError(inputElement, "Must be a valid number");
                 otnotbool = false;
                 }
-            else if(e.target.id === "otno" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "otno" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 otnotbool = true;
                 localStorage.setItem("otnoid",e.target.value);
                 clearInputError(inputElement);
@@ -725,7 +725,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 rnobool = false;
                 setInputError(inputElement, "Must be a valid number");
                 }
-            else if(e.target.id === "rno" &&  e.target.value.length > 6 &&  e.target.value.length < 255 ){
+            else if(e.target.id === "rno" &&  e.target.value.length >= 6 &&  e.target.value.length < 255 ){
                 rnobool = true;
                 localStorage.setItem("rnoid",e.target.value);
                 clearInputError(inputElement);
